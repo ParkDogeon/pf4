@@ -1,0 +1,170 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/bodybg.png);
+    background-repeat: no-repeat;
+    background-size: 38%;
+    background-position: -178px -138px;
+    background-color: #f5f2e1;
+}
+h1,h2,h3,h4,h5,h6,p,a{
+    line-height: 1;/*줄높이,글높이*/
+    font-size: 100%; /* 기본글자크기 16px */
+    margin: 0;
+}
+/* 상단영역 */
+header{
+    display: flex;
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    /*! justify-content: space-between; */
+    /*! justify-content: space-around; */
+    /*! justify-content: space-evenly; */
+    /*! width: 1440px; */
+    margin: 0 auto 0 auto;
+    /*! margin: 0 auto; */
+    align-items: center;
+    /*! border: 3px solid #999; */
+    /*! margin-top: 40px; */
+    background-color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+}
+
+div>*{ /* css주석 >바로아래 * 모든 요소 */
+    /*! border: 1px solid; */
+}
+header .menu{
+    display: none;
+}
+h1{
+    font-size: 59px;
+    color: #9292ce;
+    margin: 0;
+    margin: 22px 10px;
+}
+header h1 a{ /* 하위 선택자 h1안(아래)에 있는 a*/
+    font-size: 0;
+    background-image: url(../img/logo.svg);
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    /*! gap: 15px; */
+    margin: 1px 2px 3px 4px;
+    padding: 0;
+}
+header ul.mnb{
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+header ul.mnb li{
+}
+header ul.mnb li a{
+    color: #7f7f7f;
+    padding: 0 15px;
+}
+header ul.enb{
+    /*! padding: 10px 30px; */
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    padding: 25px 60px;
+    column-gap: 10px;
+}
+
+header ul.enb li{
+    
+}
+header ul.enb li a{
+    
+    color: #555658;
+}
+header ul li{ /*:hover은 해당요소에 마우스를 올린상태를 의미 */
+    color:#000;
+    /*! border-bottom:2px solid #ccc; */
+}
+header ul li a{
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+}
+header ul li a:hover{ /*:hover은 해당요소에 마우스를 올린상태를 의미 */
+    color:#000;
+    border-bottom:2px solid #ccc;
+}
+a{
+ text-decoration: none; /*밑줄없애기*/
+}
+header>a:nth-of-type(1){ /* > 자식선택자 바로아래에 있는 요소를 선택(header태그바로아래에 있는 a) */
+    background-color: #333333;
+    color: #fff;
+    width: 250px;
+    height: 100px;
+    display: block;/* 블럭태그로 변환 */
+    text-align: center; /* 글자정렬(중앙) */
+    line-height: 100px; /* line-height에 수직중앙에 글자가 배치된다 */
+    font-size: 20px; /*글자크기 */
+    font-weight: bold; /*글자두께 */
+    font-family: 'Nanum Myeongjo', serif;
+}
+header > a:nth-of-type(2){
+    font-size: 0;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+header > a:nth-of-type(2)::after{
+    content: "";    
+    display: block;
+    border-top: 3px solid #000;
+    margin-top: 10px;
+    }
+  .neonText {
+    animation: flicker 5.5s infinite alternate;
+    /*! color: #fff; */
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 1px #0d1a41, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 7px #0d1a41, 0 0 8px #0d1a41, 0 0 10px #0d1a41;
+  }
+@keyframes flicker {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 7px #fff, 0 0 10px #fff, 0 0 18px #3593b9,
+      0 0 15px #0d1a41, 0 0 15px #0d1a41, 0 0 18px #0d1a41, 0 0 15px #0d1a41;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

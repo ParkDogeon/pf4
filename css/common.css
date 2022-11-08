@@ -1,0 +1,8 @@
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.block{
+    display: block;
+}

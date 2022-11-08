@@ -1,0 +1,312 @@
+@media screen and (max-width:768px){ 
+  /* 장치가 스크린이고 화면너비가 최대768px일때(768px이하) 스타일적용 */
+  header{
+  width: 100%;
+  /*! margin-top: 10px; */
+  /*! margin-right: 10px; */
+  /*! margin-left: 10px; */
+  }
+  header .menu{  
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /*! border: 1px solid; */
+  display: block;
+  top: 15px;
+  right: 13px;
+  font-size: 0;
+  background-image: url(../img/menu.svg);
+  }
+  header h1{
+  margin: 0 auto;
+  }
+  
+  header ul{
+  display: none;
+  }
+  header > a{
+  display: none;
+  }
+  header > a:nth-of-type(1){
+  display: none;  
+  }
+  header > a:nth-of-type(2){
+  display: block;
+  }
+  /* 타이틀 */
+  div#title{  
+  height: 530px;
+  background-image: url(../img/af_title.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: auto;
+  }
+  div#title video{  
+  display: none;
+  }
+  div#title .in{
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  padding: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*! padding-top: 180px; */
+  background-image: none;
+  height: auto;
+  box-sizing: border-box;
+  }
+  div#title .in::after{
+    
+  position: static; /* position 초기화명령(poisition안준상태로 되돌림) */
+  width: 390px;
+  height: 313px;
+  }
+  div#title h2{
+    
+  font-size: 15px;
+  }
+  div#title h2 + p{
+  line-height: 2.5;
+  font-size: 28px;
+  }
+  div#title h2 + p + p{
+    
+  font-size: 15px;
+  }
+  div#title a{  
+  /*! width: calc(100% - 20px); */
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  
+  /* section */
+  section{  
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+  section#about{
+    
+  box-sizing: border-box;
+  width: auto;
+  background-position: bottom;
+  height: auto;
+  }
+  section#about .company{
+    
+  /*! display: flex; */
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  }
+  section#about .company div:first-child{
+    
+  width: auto;
+  align-items: center;
+  }
+  section#about .company .subject{
+    
+  }
+  section#about .company h2 + p{   
+  font-size: 19px;
+  text-align: center;
+  }
+  section#about .company h2 + p span{
+    
+  }
+  section#about .company h2 + p + p{
+    
+  text-align: center;
+  }
+  section#about .company .go{
+    
+  position: absolute;
+  bottom: 0;
+  }
+  section#about .company span.control{
+    
+  position: absolute;
+  bottom: 13%;
+  }
+  section#about .company span.control button.prev{
+    
+  }
+  section#about .company span.control button.next{
+    
+  }
+  section#about .company div:first-child + div{
+  width: 90%;
+  padding-bottom: 100px;
+  }
+  section#about .company img{
+    
+  margin-top: 0;
+  }
+  
+  /* 서비스 */
+  #service{
+    
+  width: auto;
+  height: auto;
+  }
+  #service .wrap{
+    
+  height: auto;
+  width: auto;
+  }
+  #service .wrap h2.subject{
+    
+  }
+  #service .wrap .p{
+    
+  }
+  #service .wrap h2 + .p{
+    
+  }
+  #service .wrap ul{  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  }
+  #service .wrap ul li{
+    
+  width: calc(100% - 40px);
+  }
+  /* 히스토리 */
+  /* history   */
+
+  #history .wrap{
+  width: 100%;
+  background-position-y: bottom;
+  background-origin: padding-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  }
+  #history .wrap hgroup h2{
+  margin: 0 auto;
+  }
+  #history .wrap hgroup h3{
+  text-align: center;
+  line-height: 2.0;
+  }
+  #history .wrap ul.list{
+  width: 65%;
+  }
+
+  
+  /* 찾아오시는 길 */
+  section#location{
+    
+  }
+  section#location .wrap{
+    
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 160px;
+  flex-direction: column-reverse;
+  }
+  section#location .wrap iframe{    
+  font-size: 12px;
+  width: 55%;
+  margin: 40px auto;
+  }
+  section#location .wrap .right{
+    
+  text-align: center;
+  margin: 0 auto;
+  }
+  section#location .wrap .right hgroup{
+    
+  }
+  section#location .wrap .right a{
+  position: absolute;
+  bottom: 100px;
+  /*! right: 110px; */
+  display: block;
+  left: calc(50% - 103px);
+  }
+  section#location .wrap .right hgroup h2.subject{
+    
+  margin: 0 auto;
+  }
+  /* footer */
+  footer{
+    
+  height: auto;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  }
+  footer .wrap{
+    
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  height: auto;
+  box-sizing: border-box;
+  }
+  footer .wrap h1{
+    
+  }
+  footer .wrap h1 a{
+    
+  }
+  footer .wrap address{
+    
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+  display: block;
+  }
+  footer .wrap address strong{
+    
+  }
+  footer .wrap p.copyright{    
+  position: static;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 13px;
+  }
+  footer .wrap p.tel{
+    
+  margin-top: 50px;
+  padding-bottom: 50px;
+  }
+  footer .wrap p.tel strong{
+    
+  font-size: 20px;
+  }
+  footer .wrap address strong:nth-child(n+2){ 
+  }
+  footer .wrap address strong:nth-child(n+3){  
+  }
+  .block{
+    display: block;    
+  }
+  footer .wrap ul li:nth-child(1) a{ 
+  display: none;
+  }
+  footer .wrap ul{
+    
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  }
+  aside{
+    
+  display: none;
+  }
+}

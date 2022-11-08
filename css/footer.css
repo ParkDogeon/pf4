@@ -1,0 +1,107 @@
+/* 하단 */
+footer{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #347282;
+  color: white;
+  height: 400px;
+}
+footer .wrap{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 1440px;
+  margin: 0 auto;
+  /*! border: 3px solid #999; */
+  border-top-color: rgb(153, 153, 153);
+  border-top-style: solid;
+  border-top-width: 3px;
+  box-sizing: border-box;
+  border-top: transparent;
+  /*! display: flex; */
+  position: relative;
+  justify-content: space-between;
+}
+footer .wrap h1{
+  margin-top: 0;
+}
+footer .wrap h1 a{
+  font-size: 0;
+  background-image: url(../img/logo.svg);
+  width: 80px;
+  height: 80px;
+  display: block;
+
+}
+footer .wrap address{
+  width: 69%;
+  display: flex;
+  line-height: 2;
+  column-gap: 6px;
+  margin: 37px 0;
+}
+footer .wrap address strong{
+  font-weight: bold;
+  margin-right: 8px;
+}
+footer .wrap address strong:nth-child(n+2){
+  /*! margin-left:20px; */
+}
+footer .wrap p{
+    
+}
+footer .wrap p.copyright{
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+footer .wrap p.tel{
+  display: block;
+  line-height: 1;
+}
+footer .wrap p.tel strong{
+  font-size: 20px;
+  vertical-align: top;
+}
+
+footer .wrap ul{
+
+  position: absolute;
+  top: 65px;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+footer .wrap ul li{
+
+}
+footer .wrap ul li a{
+  width: 100px;
+  height: 100px;
+}
+footer .wrap ul li:nth-child(1) a{
+  border: 1px solid #fff;
+  transition: all 0.5s;
+  color: white;
+  padding: 20px 50px;
+}
+footer .wrap ul li:nth-child(1) a:hover{
+  background-color: #024896;
+}
+footer .wrap ul li:nth-child(2) a{
+  padding: 10px 10px;
+  background-image: url(../img/You.png);
+  width: 80px;
+  height: 80px;
+  display: block;
+  font-size: 0;
+  background-size: contain;
+}
+footer .wrap ul li:nth-child(3) a{
+  padding: 10px 10px;
+  background-image: url(../img/ins.png);
+  width: 38px;
+  height: 38px;
+  display: block;
+  font-size: 0;
+  background-size: contain;
+}
+
